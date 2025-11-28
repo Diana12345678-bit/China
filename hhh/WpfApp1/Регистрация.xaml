@@ -1,12 +1,121 @@
-﻿<Window x:Class="WpfApp1.Регистрация"
+﻿<Window x:Class="ChinaTradeManager.Регистрация"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfApp1"
-        mc:Ignorable="d"
-        Title="Регистрация" Height="450" Width="800">
-    <Grid>
-        
+        Title="China Trade Manager" Height="982" Width="1512"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+
+    <Grid Background="Black" TextBlock.FontSize="48">
+
+        <!-- Основной заголовок -->
+        <TextBlock HorizontalAlignment="Center" 
+                   Height="165" 
+                   Margin="0,40,0,0" 
+                   TextWrapping="Wrap" 
+                   VerticalAlignment="Top" 
+                   Width="642"
+                   Foreground="White" 
+                   FontSize="48"
+                   Text="Зарегистрируйтесь или войдите в профиль"
+                   FontFamily="Segoe UI"
+                   TextAlignment="Center"/>
+
+        <!-- Поле "номер или почта" -->
+        <TextBox x:Name="txtLogin" 
+                HorizontalAlignment="Left" 
+                Height="77"
+                Margin="412,314,0,0" 
+                TextWrapping="Wrap" 
+                VerticalAlignment="Top" 
+                Width="742"
+                Background="#FF2D2D2D"
+                Foreground="#4E4E4E"
+                FontSize="24"
+                BorderBrush="#FF5E5E5E"
+                BorderThickness="1"
+                Padding="10,0,0,0"
+                Text="Ваш номер или почта"
+                FontFamily="Segoe UI"/>
+
+        <!-- Поле "пароль" -->
+
+        <!-- Кнопка "Войти" -->
+
+        <!-- Текст "или" -->
+
+        <!-- Кнопка "Зарегистрироваться" -->
+        <Button x:Name="btnRegister" 
+                HorizontalAlignment="Left" 
+                Height="77"
+                Margin="552,757,0,0" 
+                VerticalAlignment="Top" 
+                Width="462"
+                Background="#FFAB816A"
+                Foreground="#FF2D2D2D"
+                FontSize="40"
+                FontFamily="Segoe UI"
+                Content="Зарегистрироваться"
+                BorderThickness="1"
+                Cursor="Hand"/>
+        <TextBox x:Name="txtLogin_Копировать" 
+            HorizontalAlignment="Left" 
+            Height="77"
+            Margin="412,461,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="742"
+            Background="#FF2D2D2D"
+            Foreground="#4E4E4E"
+            FontSize="24"
+            BorderBrush="#FF5E5E5E"
+            BorderThickness="1"
+            Padding="10,0,0,0"
+            Text="Ваш пароль"
+            FontFamily="Segoe UI"/>
+        <TextBlock HorizontalAlignment="Left" 
+            Height="53" 
+            Margin="737,682,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="92"
+            Foreground="#CACACA" 
+            FontSize="40"
+            Text="или"
+            FontFamily="Segoe UI"
+            TextAlignment="Center" RenderTransformOrigin="-0.228,-0.433"/>
+        <TextBlock HorizontalAlignment="Left" 
+            Height="52" 
+            Margin="412,239,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="324"
+            Foreground="#CACACA" 
+            FontSize="40"
+            FontFamily="Segoe UI"
+            TextAlignment="Center" RenderTransformOrigin="-0.228,-0.433"><Run Language="ru-ru" Text="н"/><Run Text="омер или почта"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" 
+            Height="52" 
+            Margin="412,396,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="138"
+            Foreground="#CACACA" 
+            FontSize="40"
+            FontFamily="Segoe UI"
+            TextAlignment="Center" RenderTransformOrigin="-0.228,-0.433"><Run Language="ru-ru" Text="п"/><Run Text="ароль"/></TextBlock>
+        <Button x:Name="btnRegister_Копировать" 
+            HorizontalAlignment="Left" 
+            Height="77"
+            Margin="552,600,0,0" 
+            VerticalAlignment="Top" 
+            Width="462"
+            Background="#FFAB816A"
+            Foreground="#FF2D2D2D"
+            FontSize="40"
+            FontFamily="Segoe UI"
+            Content="Войти"
+            BorderThickness="1"
+            Cursor="Hand"/>
+
     </Grid>
-</Window>
+</Window> 
