@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Логика взаимодействия для Регистрация2.xaml
+    /// Логика взаимодействия для Basket.xaml
     /// </summary>
-    public partial class Регистрация2 : Window
+    public partial class Basket : Window
     {
-        public Регистрация2()
+        public Basket()
         {
             InitializeComponent();
         }

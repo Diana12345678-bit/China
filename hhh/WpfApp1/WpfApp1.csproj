@@ -59,14 +59,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Catalog.xaml.cs">
-      <DependentUpon>Catalog.xaml</DependentUpon>
+    <Compile Include="Registartion.xaml.cs">
+      <DependentUpon>Registartion.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Регистрация.xaml.cs">
-      <DependentUpon>Регистрация.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Регистрация2.xaml.cs">
-      <DependentUpon>Регистрация2.xaml</DependentUpon>
+    <Compile Include="Registration2.xaml.cs">
+      <DependentUpon>Registration2.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -96,21 +93,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Catalog.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Регистрация.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Регистрация2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Resource Include="111.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="111.png" />
+    <Page Include="Registartion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Registration2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
