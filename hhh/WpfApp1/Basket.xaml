@@ -1,12 +1,444 @@
 ﻿<Window x:Class="WpfApp1.Basket"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfApp1"
-        mc:Ignorable="d"
-        Title="Basket" Height="450" Width="800">
-    <Grid>
-        
+        Title="China Trade Manager - Корзина" Height="982" Width="1512"
+        WindowStartupLocation="CenterScreen"
+        >
+
+    <Grid Background="Black">
+
+        <!-- Верхняя панель -->
+
+        <!-- Основной контент -->
+        <Grid Margin="40,60,40,40" Background="Black">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="470"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Левая часть - товары -->
+            <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto">
+                <StackPanel>
+                    <!-- Товар 1 - ВЫТЯНУТЫЙ БЛОК -->
+                    <!-- Товар 1 - ВЫТЯНУТЫЙ БЛОК -->
+                    <Border Background="#FF171A1F" 
+                            BorderBrush="#FF5E5E5E" 
+                            BorderThickness="1"
+                            CornerRadius="4"
+                            Height="171"
+                            Padding="20" RenderTransformOrigin="0.499,0.521"
+                            >
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Левая часть - заголовок и описание -->
+                            <StackPanel Grid.Column="0" Width="400">
+
+                                <TextBlock Text="Для iPhone 15 Pro" 
+                                          Foreground="White" 
+                                          FontSize="16"
+                                          FontFamily="Segoe UI"
+                                          FontWeight="Bold"
+                                          Margin="0,0,0,5"/>
+
+                                <TextBlock Text="Защитный чехол с магнитом MagSafe" 
+                                          Foreground="#FFCACACA" 
+                                          FontSize="12"
+                                          FontFamily="Segoe UI"
+                                          Margin="0,0,0,10"/>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="size M" 
+                                              Foreground="#FFCACACA" 
+                                              FontSize="12"
+                                              FontFamily="Segoe UI"
+                                              FontWeight="SemiBold"/>
+
+                                    <TextBlock Text=" color черный" 
+                                              Foreground="#FFCACACA" 
+                                              FontSize="12"
+                                              FontFamily="Segoe UI"
+                                              FontWeight="SemiBold"
+                                              Margin="10,0,0,0"/>
+                                </StackPanel>
+
+                                <TextBlock Text="supplier id: 2" 
+                                          Foreground="#FFCACACA" 
+                                          FontSize="12"
+                                          FontFamily="Segoe UI"
+                                          Margin="0,5,0,0"/>
+
+
+
+                            </StackPanel>
+
+
+                            <!-- Центр - цена -->
+                            <StackPanel Grid.Column="1" Orientation="Vertical"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center">
+
+
+                                <TextBlock Text="450 P" 
+                                          Foreground="#FFAB816A" 
+                                          FontSize="18"
+                                          FontFamily="Segoe UI"
+                                          FontWeight="Bold" RenderTransformOrigin="0.224,0.564" HorizontalAlignment="Center"/>
+
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Image Margin="5" Source="/333.png" Stretch="Fill" RenderTransformOrigin="3.059,-26.531"/>
+                                    <TextBox TextWrapping="Wrap" Text="1" TextChanged="TextBox_TextChanged" Background="#FF171A1F" RenderTransformOrigin="4.964,5.858" Height="20" Width="14" Foreground="White" BorderBrush="#FF5E5E5E"/>
+                                    <Image Margin="5" Source="/444.png" Stretch="Fill" RenderTransformOrigin="0.095,1.704"/>
+                                    <Image Margin="4" Source="/555.png" Stretch="Fill"/>
+
+                                </StackPanel>
+                            </StackPanel>
+
+
+                            <!-- Правая часть - кнопка удаления -->
+                            <StackPanel Grid.Column="2" 
+                                       HorizontalAlignment="Right"
+                                       VerticalAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                    <Border Background="#FF171A1F" 
+                        BorderBrush="#FF5E5E5E" 
+                        BorderThickness="1"
+                        CornerRadius="4"
+                        Height="171"
+                        Padding="20" RenderTransformOrigin="0.499,0.521"
+                            >
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Левая часть - заголовок и описание -->
+                            <StackPanel Grid.Column="0" Width="400">
+
+                                <TextBlock Text="Для iPhone 15 Pro" 
+                                    Foreground="White" 
+                                    FontSize="16"
+                                    FontFamily="Segoe UI"
+                                    FontWeight="Bold"
+                                    Margin="0,0,0,5"/>
+
+                                <TextBlock Text="Защитный чехол с магнитом MagSafe" 
+                                    Foreground="#FFCACACA" 
+                                    FontSize="12"
+                                    FontFamily="Segoe UI"
+                                    Margin="0,0,0,10"/>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="size M" 
+                                        Foreground="#FFCACACA" 
+                                        FontSize="12"
+                                        FontFamily="Segoe UI"
+                                        FontWeight="SemiBold"/>
+
+                                    <TextBlock Text=" color черный" 
+                                        Foreground="#FFCACACA" 
+                                        FontSize="12"
+                                        FontFamily="Segoe UI"
+                                        FontWeight="SemiBold"
+                                        Margin="10,0,0,0"/>
+                                </StackPanel>
+
+                                <TextBlock Text="supplier id: 2" 
+                                    Foreground="#FFCACACA" 
+                                    FontSize="12"
+                                    FontFamily="Segoe UI"
+                                    Margin="0,5,0,0"/>
+
+
+
+                            </StackPanel>
+
+
+                            <!-- Центр - цена -->
+                            <StackPanel Grid.Column="1" Orientation="Vertical"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+
+
+                                <TextBlock Text="450 P" 
+                                    Foreground="#FFAB816A" 
+                                    FontSize="18"
+                                    FontFamily="Segoe UI"
+                                    FontWeight="Bold" RenderTransformOrigin="0.224,0.564" HorizontalAlignment="Center"/>
+
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Image Margin="5" Source="/333.png" Stretch="Fill" RenderTransformOrigin="3.059,-26.531"/>
+                                    <TextBox TextWrapping="Wrap" Text="1" TextChanged="TextBox_TextChanged" Background="#FF171A1F" RenderTransformOrigin="4.964,5.858" Height="20" Width="14" Foreground="White" BorderBrush="#FF5E5E5E"/>
+                                    <Image Margin="5" Source="/444.png" Stretch="Fill" RenderTransformOrigin="0.095,1.704"/>
+                                    <Image Margin="4" Source="/555.png" Stretch="Fill"/>
+
+                                </StackPanel>
+                            </StackPanel>
+
+
+                            <!-- Правая часть - кнопка удаления -->
+                            <StackPanel Grid.Column="2" 
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                    <Border Background="#FF171A1F" 
+                        BorderBrush="#FF5E5E5E" 
+                        BorderThickness="1"
+                        CornerRadius="4"
+                        Height="171"
+                        Padding="20" RenderTransformOrigin="0.499,0.521"
+                            >
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Левая часть - заголовок и описание -->
+                            <StackPanel Grid.Column="0" Width="400">
+
+                                <TextBlock Text="Для iPhone 15 Pro" 
+                                    Foreground="White" 
+                                    FontSize="16"
+                                    FontFamily="Segoe UI"
+                                    FontWeight="Bold"
+                                    Margin="0,0,0,5"/>
+
+                                <TextBlock Text="Защитный чехол с магнитом MagSafe" 
+                                    Foreground="#FFCACACA" 
+                                    FontSize="12"
+                                    FontFamily="Segoe UI"
+                                    Margin="0,0,0,10"/>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="size M" 
+                                        Foreground="#FFCACACA" 
+                                        FontSize="12"
+                                        FontFamily="Segoe UI"
+                                        FontWeight="SemiBold"/>
+
+                                    <TextBlock Text=" color черный" 
+                                        Foreground="#FFCACACA" 
+                                        FontSize="12"
+                                        FontFamily="Segoe UI"
+                                        FontWeight="SemiBold"
+                                        Margin="10,0,0,0"/>
+                                </StackPanel>
+
+                                <TextBlock Text="supplier id: 2" 
+                                    Foreground="#FFCACACA" 
+                                    FontSize="12"
+                                    FontFamily="Segoe UI"
+                                    Margin="0,5,0,0"/>
+
+
+
+                            </StackPanel>
+
+
+                            <!-- Центр - цена -->
+                            <StackPanel Grid.Column="1" Orientation="Vertical"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+
+
+                                <TextBlock Text="450 P" 
+                                    Foreground="#FFAB816A" 
+                                    FontSize="18"
+                                    FontFamily="Segoe UI"
+                                    FontWeight="Bold" RenderTransformOrigin="0.224,0.564" HorizontalAlignment="Center"/>
+
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Image Margin="5" Source="/333.png" Stretch="Fill" RenderTransformOrigin="3.059,-26.531"/>
+                                    <TextBox TextWrapping="Wrap" Text="1" TextChanged="TextBox_TextChanged" Background="#FF171A1F" RenderTransformOrigin="4.964,5.858" Height="20" Width="14" Foreground="White" BorderBrush="#FF5E5E5E"/>
+                                    <Image Margin="5" Source="/444.png" Stretch="Fill" RenderTransformOrigin="0.095,1.704"/>
+                                    <Image Margin="4" Source="/555.png" Stretch="Fill"/>
+
+                                </StackPanel>
+                            </StackPanel>
+
+
+                            <!-- Правая часть - кнопка удаления -->
+                            <StackPanel Grid.Column="2" 
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                    <!-- Товар 1 - ВЫТЯНУТЫЙ БЛОК -->
+
+                    <!-- Товар 1 - ВЫТЯНУТЫЙ БЛОК -->
+
+                    <!-- Товар 2 - ВЫТЯНУТЫЙ БЛОК -->
+
+                    <!-- Товар 3 - ВЫТЯНУТЫЙ БЛОК -->
+
+                </StackPanel>
+            </ScrollViewer>
+            <Button BorderThickness="0" Click="Putton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="-31,-50,0,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="/111.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button BorderThickness="0" Click="Kutton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="2" Margin="0,-50,0,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="/666.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button BorderThickness="0" Click="Button_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="2" Margin="0,-50,-35,0"  >
+                <Button.Background>
+                    <ImageBrush ImageSource="/777.png"/>
+                </Button.Background>
+            </Button>
+
+
+
+            <!-- Правая часть - панель итогов (НЕ ТРОГАЛ) -->
+            <Border Grid.Column="2"
+                    Background="#FF171A1F" 
+                    BorderBrush="#FF5E5E5E" 
+                    BorderThickness="1"
+                    CornerRadius="4"
+                    Padding="30"
+                    Height="449"
+                    VerticalAlignment="Top">
+
+                <StackPanel>
+                    <!-- Заголовок -->
+                    <TextBlock Text="ИТОГО" 
+                              Foreground="#FFCACACA" 
+                              FontSize="18"
+                              FontFamily="Segoe UI"
+                              FontWeight="SemiBold"
+                              Margin="0,0,0,30"/>
+
+                    <!-- Промежуточная сумма -->
+                    <Grid Margin="0,0,0,15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Промежуточная сумма" 
+                                  Foreground="#FFCACACA" 
+                                  FontSize="14"
+                                  FontFamily="Segoe UI"
+                                  Grid.Column="0"/>
+                        <TextBlock Text="1350 ₽" 
+                                  Foreground="#FFCACACA" 
+                                  FontSize="14"
+                                  FontFamily="Segoe UI"
+                                  Grid.Column="1"/>
+                    </Grid>
+
+                    <!-- Доставка -->
+                    <Grid Margin="0,0,0,15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Доставка" 
+                                  Foreground="#FFCACACA" 
+                                  FontSize="14"
+                                  FontFamily="Segoe UI"
+                                  Grid.Column="0"/>
+                        <TextBlock Text="300 ₽" 
+                                  Foreground="#FFCACACA" 
+                                  FontSize="14"
+                                  FontFamily="Segoe UI"
+                                  Grid.Column="1"/>
+                    </Grid>
+
+                    <!-- Общая сумма -->
+                    <Grid Margin="0,0,0,25">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Общая сумма" 
+                                      Foreground="#FFCACACA" 
+                                      FontSize="14"
+                                      FontFamily="Segoe UI"
+                                      FontWeight="SemiBold"
+                                      Margin="0,0,0,2"/>
+                            <TextBlock Text="включая пошлины" 
+                                      Foreground="#FFCACACA" 
+                                      FontSize="12"
+                                      FontFamily="Segoe UI"
+                                      FontStyle="Italic"/>
+                        </StackPanel>
+                        <TextBlock Text="1650 ₽" 
+                                  Foreground="#FFAB816A" 
+                                  FontSize="16"
+                                  FontFamily="Segoe UI"
+                                  FontWeight="Bold"
+                                  Grid.Column="1"/>
+                    </Grid>
+
+                    <!-- Разделитель -->
+                    <Border Height="1" 
+                            Background="#FF5E5E5E" 
+                            Margin="0,0,0,25"/>
+
+                    <!-- Кнопки -->
+                    <StackPanel>
+                        <Button Content="Оформить заказ" 
+                                Background="#FFAB816A"
+                                Foreground="White"
+                                BorderThickness="0"
+                                FontFamily="Segoe UI"
+                                FontSize="14"
+                                Height="40"
+                                Cursor="Hand"
+                                Margin="0,0,0,10"
+                                FontWeight="SemiBold"/>
+
+                        <Button Content="Продолжить покупки" 
+                                Background="Transparent"
+                                Foreground="#FFAB816A"
+                                BorderThickness="1"
+                                BorderBrush="#FFAB816A"
+                                FontFamily="Segoe UI"
+                                FontSize="14"
+                                Height="40"
+                                Cursor="Hand"
+                                FontWeight="SemiBold"/>
+                    </StackPanel>
+                </StackPanel>
+
+            </Border>
+
+
+        </Grid>
+        <Image HorizontalAlignment="Left" Height="100" Margin="428,-236,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBlock HorizontalAlignment="Left" 
+            Height="55" 
+            Margin="40,0,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="211"
+            Foreground="White" 
+            FontSize="48"
+            FontFamily="Segoe UI"
+            TextAlignment="Center"><Run Language="ru-ru" Text="Корзина"/></TextBlock>
+
+
+
+
+
     </Grid>
 </Window>

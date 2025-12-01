@@ -59,6 +59,18 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Basket.xaml.cs">
+      <DependentUpon>Basket.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BasketBad.xaml.cs">
+      <DependentUpon>BasketBad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BasketGood.xaml.cs">
+      <DependentUpon>BasketGood.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Order.xaml.cs">
+      <DependentUpon>Order.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Registartion.xaml.cs">
       <DependentUpon>Registartion.xaml</DependentUpon>
     </Compile>
@@ -93,9 +105,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="111.png" />
+    <Resource Include="NewFolder1\111.png" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Basket.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BasketBad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BasketGood.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Order.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Registartion.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -104,6 +132,24 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NewFolder1\222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NewFolder1\333.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NewFolder1\555.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NewFolder1\444.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NewFolder1\666.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NewFolder1\777.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

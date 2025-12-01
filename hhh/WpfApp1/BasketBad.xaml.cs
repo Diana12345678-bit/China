@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Логика взаимодействия для Registartion.xaml
+    /// Логика взаимодействия для BasketBad.xaml
     /// </summary>
-    public partial class Registrartion : Window
+    public partial class BasketBad : Window
     {
-        public Registrartion()
+        public BasketBad()
         {
             InitializeComponent();
-        }
-
-        private void txtLogin_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }

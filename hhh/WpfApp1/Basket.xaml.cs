@@ -23,5 +23,23 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Putton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Kutton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

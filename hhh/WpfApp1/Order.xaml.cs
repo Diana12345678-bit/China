@@ -15,16 +15,16 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Логика взаимодействия для Registartion.xaml
+    /// Логика взаимодействия для Order.xaml
     /// </summary>
-    public partial class Registrartion : Window
+    public partial class Order : Window
     {
-        public Registrartion()
+        public Order()
         {
             InitializeComponent();
         }
 
-        private void txtLogin_TextChanged(object sender, TextChangedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }

@@ -1,0 +1,219 @@
+﻿<Window x:Class="WpfApp1.Order"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="China Trade Manager - Мои заказы" 
+        MinHeight="982" MinWidth="1512"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Background="#FF1E1E1E">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="73*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Левая панель меню -->
+        <Border Background="#FF171A1F" 
+                BorderBrush="#FF5E5E5E"
+                BorderThickness="0,1,1,0"
+                Width="224"
+                HorizontalAlignment="Left">
+            <Button Content="ChinaTradeDB&#xA;" 
+                Background="#FF171A1F" 
+                Foreground="#FFAB816A" 
+                BorderBrush="#FF171A1F" 
+                RenderTransformOrigin="0.221,0.594" 
+                FontSize="30"
+                VerticalAlignment="Top" Margin="1,9,-1,0"/>
+
+
+
+
+
+
+        </Border>
+
+        <!-- Основной контент -->
+        <Grid Margin="224,0,0,0" Grid.ColumnSpan="2">
+
+            <!-- Верхняя панель -->
+            <Border Background="#FF171A1F" 
+                    BorderBrush="#FF5E5E5E"
+                    BorderThickness="0,0,0,1"
+                    Height="60"
+                    VerticalAlignment="Top"/>
+
+            <!-- Основной контент -->
+            <ScrollViewer VerticalScrollBarVisibility="Auto" 
+                          Margin="0,60,0,0">
+                <Viewbox Stretch="Uniform" OpacityMask="Black">
+
+                    <Grid Width="1200" Margin="40">
+
+                        <!-- Поиск по номеру заказа -->
+                        <StackPanel Margin="0,20,0,30">
+                            <TextBlock Text="- **поиск по номеру заказа**" 
+                                      Foreground="#FFCACACA" 
+                                      FontSize="14"
+                                      FontFamily="Segoe UI"
+                                      FontWeight="SemiBold"/>
+
+                            <!-- Разделитель -->
+                            <Border Height="1" 
+                                    Background="#FF5E5E5E" 
+                                    Margin="0,20,0,0"/>
+                        </StackPanel>
+
+                        <!-- Карточка заказа -->
+                        <Border Background="#FF171A1F" 
+                                BorderBrush="#FF5E5E5E" 
+                                BorderThickness="1"
+                                CornerRadius="4"
+                                Padding="30"
+                                Margin="0,80,0,0">
+
+                            <StackPanel>
+
+                                <!-- Номер заказа -->
+                                <TextBlock Text="**Номер заказа** ORDER-002" 
+                                          Foreground="#FFCACACA" 
+                                          FontSize="16"
+                                          FontFamily="Segoe UI"
+                                          FontWeight="SemiBold"
+                                          Margin="0,0,0,10"/>
+
+                                <!-- Информация о заказе -->
+                                <Grid Margin="0,0,0,20">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <!-- Дата создания -->
+                                    <TextBlock Text="Дата создания :" 
+                                              Foreground="#FFCACACA" 
+                                              FontSize="14"
+                                              FontFamily="Segoe UI"
+                                              Grid.Row="0" Grid.Column="0"
+                                              Margin="0,0,10,5"/>
+
+                                    <TextBlock Text="2025-11-17 13:39:31" 
+                                              Foreground="White" 
+                                              FontSize="14"
+                                              FontFamily="Segoe UI"
+                                              Grid.Row="0" Grid.Column="1"
+                                              Margin="0,0,0,5"/>
+
+                                    <!-- Ожидаемая доставка -->
+                                    <TextBlock Text="Ожидаемая доставка :" 
+                                              Foreground="#FFCACACA" 
+                                              FontSize="14"
+                                              FontFamily="Segoe UI"
+                                              Grid.Row="1" Grid.Column="0"
+                                              Margin="0,0,10,5"/>
+
+                                    <TextBlock Text="2025-11-30" 
+                                              Foreground="White" 
+                                              FontSize="14"
+                                              FontFamily="Segoe UI"
+                                              Grid.Row="1" Grid.Column="1"
+                                              Margin="0,0,0,5"/>
+
+                                    <!-- Текущий статус -->
+                                    <TextBlock Text="Текущий статус :" 
+                                              Foreground="#FFCACACA" 
+                                              FontSize="14"
+                                              FontFamily="Segoe UI"
+                                              Grid.Row="2" Grid.Column="0"
+                                              Margin="0,0,10,5"/>
+
+                                    <TextBlock Text="в пути" 
+                                              Foreground="#FFAB816A" 
+                                              FontSize="14"
+                                              FontFamily="Segoe UI"
+                                              FontWeight="SemiBold"
+                                              Grid.Row="2" Grid.Column="1"
+                                              Margin="0,0,0,5"/>
+
+                                    <!-- Получатель -->
+                                    <TextBlock Text="Получатель :" 
+                                              Foreground="#FFCACACA" 
+                                              FontSize="14"
+                                              FontFamily="Segoe UI"
+                                              Grid.Row="3" Grid.Column="0"
+                                              Margin="0,0,10,5"/>
+
+                                    <TextBlock Text="Петров Иван Сергеевич" 
+                                              Foreground="White" 
+                                              FontSize="14"
+                                              FontFamily="Segoe UI"
+                                              Grid.Row="3" Grid.Column="1"
+                                              Margin="0,0,0,5"/>
+
+                                    <!-- Сумма заказа -->
+                                    <TextBlock Text="Сумма заказа :" 
+                                              Foreground="#FFCACACA" 
+                                              FontSize="14"
+                                              FontFamily="Segoe UI"
+                                              Grid.Row="4" Grid.Column="0"
+                                              Margin="0,0,10,5"/>
+
+                                    <TextBlock Text="1650 ₽" 
+                                              Foreground="#FFAB816A" 
+                                              FontSize="16"
+                                              FontFamily="Segoe UI"
+                                              FontWeight="Bold"
+                                              Grid.Row="4" Grid.Column="1"
+                                              Margin="0,0,0,5"/>
+
+                                    <!-- Товары -->
+                                    <TextBlock Text="Товары :" 
+                                              Foreground="#FFCACACA" 
+                                              FontSize="14"
+                                              FontFamily="Segoe UI"
+                                              Grid.Row="5" Grid.Column="0"
+                                              Margin="0,0,10,5"/>
+
+                                    <TextBlock Text="Чехол для iPhone 15 Pro X 3" 
+                                              Foreground="White" 
+                                              FontSize="14"
+                                              FontFamily="Segoe UI"
+                                              Grid.Row="5" Grid.Column="1"
+                                              Margin="0,0,0,5"/>
+
+                                </Grid>
+
+                            </StackPanel>
+                        </Border>
+
+                    </Grid>
+
+                </Viewbox>
+            </ScrollViewer>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" 
+            Height="60" 
+            Margin="224,0,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="373"
+            Foreground="White" 
+            FontSize="48"
+            FontFamily="Segoe UI"
+            TextAlignment="Center" Text="Мои Заказы"/>
+        <Button Content="каталог" HorizontalAlignment="Left" Height="34" Margin="112,94,0,0" VerticalAlignment="Top" Width="72" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" FontSize="20"/>
+        <Button Content="заказы" HorizontalAlignment="Left" Height="34" Margin="112,152,0,0" VerticalAlignment="Top" Width="72" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" FontSize="20" Click="Button_Click"/>
+        <Button Content="настройки" HorizontalAlignment="Left" Height="34" Margin="112,203,0,0" VerticalAlignment="Top" Width="100" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" FontSize="20" Click="Button_Click" RenderTransformOrigin="0.985,0.339"/>
+        <Button Content="корзина" HorizontalAlignment="Left" Height="34" Margin="112,255,0,0" VerticalAlignment="Top" Width="81" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" FontSize="20" Click="Button_Click" RenderTransformOrigin="0.985,0.339"/>
+
+
+
+    </Grid>
+</Window>
