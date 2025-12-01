@@ -32,8 +32,8 @@
                     BorderBrush="#FF5E5E5E" 
                     BorderThickness="1"
                     CornerRadius="8"
-                    Width="738"
-                    Height="529"
+                    Width="792"
+                    Height="423"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Center">
 

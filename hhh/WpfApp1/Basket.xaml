@@ -92,10 +92,10 @@
                                           FontWeight="Bold" RenderTransformOrigin="0.224,0.564" HorizontalAlignment="Center"/>
 
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                    <Image Margin="5" Source="/333.png" Stretch="Fill" RenderTransformOrigin="3.059,-26.531"/>
+                                    <Image Margin="5" Source="/NewFolder1/333.png" Stretch="Fill" RenderTransformOrigin="3.059,-26.531"/>
                                     <TextBox TextWrapping="Wrap" Text="1" TextChanged="TextBox_TextChanged" Background="#FF171A1F" RenderTransformOrigin="4.964,5.858" Height="20" Width="14" Foreground="White" BorderBrush="#FF5E5E5E"/>
-                                    <Image Margin="5" Source="/444.png" Stretch="Fill" RenderTransformOrigin="0.095,1.704"/>
-                                    <Image Margin="4" Source="/555.png" Stretch="Fill"/>
+                                    <Image Margin="5" Source="/NewFolder1/444.png" Stretch="Fill" RenderTransformOrigin="0.095,1.704"/>
+                                    <Image Margin="4" Source="/NewFolder1/555.png" Stretch="Fill"/>
 
                                 </StackPanel>
                             </StackPanel>
@@ -177,10 +177,10 @@
                                     FontWeight="Bold" RenderTransformOrigin="0.224,0.564" HorizontalAlignment="Center"/>
 
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                    <Image Margin="5" Source="/333.png" Stretch="Fill" RenderTransformOrigin="3.059,-26.531"/>
+                                    <Image Margin="5" Source="/NewFolder1/333.png" Stretch="Fill" RenderTransformOrigin="3.059,-26.531"/>
                                     <TextBox TextWrapping="Wrap" Text="1" TextChanged="TextBox_TextChanged" Background="#FF171A1F" RenderTransformOrigin="4.964,5.858" Height="20" Width="14" Foreground="White" BorderBrush="#FF5E5E5E"/>
-                                    <Image Margin="5" Source="/444.png" Stretch="Fill" RenderTransformOrigin="0.095,1.704"/>
-                                    <Image Margin="4" Source="/555.png" Stretch="Fill"/>
+                                    <Image Margin="5" Source="/NewFolder1/444.png" Stretch="Fill" RenderTransformOrigin="0.095,1.704"/>
+                                    <Image Margin="4" Source="/NewFolder1/555.png" Stretch="Fill"/>
 
                                 </StackPanel>
                             </StackPanel>
@@ -262,10 +262,10 @@
                                     FontWeight="Bold" RenderTransformOrigin="0.224,0.564" HorizontalAlignment="Center"/>
 
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                    <Image Margin="5" Source="/333.png" Stretch="Fill" RenderTransformOrigin="3.059,-26.531"/>
+                                    <Image Margin="5" Source="/NewFolder1/333.png" Stretch="Fill" RenderTransformOrigin="3.059,-26.531"/>
                                     <TextBox TextWrapping="Wrap" Text="1" TextChanged="TextBox_TextChanged" Background="#FF171A1F" RenderTransformOrigin="4.964,5.858" Height="20" Width="14" Foreground="White" BorderBrush="#FF5E5E5E"/>
-                                    <Image Margin="5" Source="/444.png" Stretch="Fill" RenderTransformOrigin="0.095,1.704"/>
-                                    <Image Margin="4" Source="/555.png" Stretch="Fill"/>
+                                    <Image Margin="5" Source="/NewFolder1/444.png" Stretch="Fill" RenderTransformOrigin="0.095,1.704"/>
+                                    <Image Margin="4" Source="/NewFolder1/555.png" Stretch="Fill"/>
 
                                 </StackPanel>
                             </StackPanel>
@@ -289,19 +289,19 @@
             </ScrollViewer>
             <Button BorderThickness="0" Click="Putton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="-31,-50,0,0">
                 <Button.Background>
-                    <ImageBrush ImageSource="/111.png"/>
+                    <ImageBrush ImageSource="/NewFolder1/111.png"/>
                 </Button.Background>
             </Button>
 
             <Button BorderThickness="0" Click="Kutton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="2" Margin="0,-50,0,0">
                 <Button.Background>
-                    <ImageBrush ImageSource="/666.png"/>
+                    <ImageBrush ImageSource="/NewFolder1/666.png"/>
                 </Button.Background>
             </Button>
 
             <Button BorderThickness="0" Click="Button_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="2" Margin="0,-50,-35,0"  >
                 <Button.Background>
-                    <ImageBrush ImageSource="/777.png"/>
+                    <ImageBrush ImageSource="/NewFolder1/777.png"/>
                 </Button.Background>
             </Button>
 

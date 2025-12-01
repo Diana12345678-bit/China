@@ -24,8 +24,8 @@
                             BorderBrush="#FF5E5E5E" 
                             BorderThickness="1"
                             CornerRadius="8"
-                            Width="588"
-                            Height="476">
+                            Width="534"
+                            Height="409">
 
                         <StackPanel Margin="40" HorizontalAlignment="Center">
 

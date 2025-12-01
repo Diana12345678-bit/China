@@ -151,5 +151,19 @@
   <ItemGroup>
     <Resource Include="NewFolder1\777.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NewFolder1\1000.png" />
+    <Resource Include="NewFolder1\11.png" />
+    <Resource Include="NewFolder1\12.png" />
+    <Resource Include="NewFolder1\888.png" />
+    <Resource Include="NewFolder1\999.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NewFolder1\12!.png" />
+    <Resource Include="NewFolder1\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NewFolder1\14.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -24,7 +24,56 @@ namespace WpfApp1
             InitializeComponent();
         }
 
+        private void Qutton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Wutton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Futton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Dutton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Lutton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Putton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Vutton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Zutton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Autton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void txtFirstName_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
