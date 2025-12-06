@@ -1,0 +1,361 @@
+﻿<Window x:Class="WpfApp1.Profile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="China Trade Manager - Мой профиль" 
+        MinHeight="982" MinWidth="1512"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Background="#FF1E1E1E">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <!-- Адреса доставки -->
+
+
+        <!-- Адреса доставки -->
+        <Border 
+        Height="324" 
+        Background="#FF171A1F"
+        BorderBrush="#FF5E5E5E"
+        BorderThickness="1"
+        CornerRadius="4"
+        Padding="20" Margin="296,620,50,22">
+
+            <StackPanel Margin="0,0,16,5">
+                <!-- Заголовок -->
+                <TextBlock Text="Адреса Доставки" 
+                 Foreground="#FFCACACA" 
+                 FontSize="18"
+                 FontFamily="Segoe UI"
+                 FontWeight="SemiBold"
+                 Margin="0,0,0,20"/>
+
+                <!-- Адрес 1 -->
+                <Border Background="#FF2D2D2D"
+                BorderBrush="#FF5E5E5E"
+                BorderThickness="1"
+                CornerRadius="4"
+                Height="64"
+                Margin="0,0,0,15">
+                    <TextBlock Text="Невский пр-т, д. 100, кв. 12&#xA;г. Санкт-Петербург 190000" 
+                     Foreground="White" 
+                     FontSize="14"
+                     FontFamily="Segoe UI"
+                     FontWeight="Medium"
+                     VerticalAlignment="Center"
+                     TextWrapping="Wrap" Width="1036"/>
+                </Border>
+
+                <!-- Адрес 2 -->
+                <Border Background="#FF2D2D2D"
+                BorderBrush="#FF5E5E5E"
+                BorderThickness="1"
+                CornerRadius="4"
+                Height="64"
+                Margin="0,0,0,20">
+                    <TextBlock Text="ул. Тверская, д. 15, кв. 34&#xA;г. Москва 123456" 
+                     Foreground="White" 
+                     FontSize="14"
+                     FontFamily="Segoe UI"
+                     FontWeight="Medium"
+                     VerticalAlignment="Center"
+                     TextWrapping="Wrap" Width="1035"/>
+                </Border>
+
+                <!-- Кнопка добавления адреса -->
+                <Button Content="+ Добавить Адрес"
+                Background="Transparent"
+                BorderBrush="#FFAB816A"
+                BorderThickness="1"
+                Foreground="#FFAB816A"
+                FontSize="14"
+                Height="40"
+                Width="200"
+                HorizontalAlignment="Left"
+                Cursor="Hand">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}"
+                                        BorderBrush="{TemplateBinding BorderBrush}"
+                                        BorderThickness="{TemplateBinding BorderThickness}"
+                                        CornerRadius="4">
+                                            <ContentPresenter HorizontalAlignment="Center"
+                                                      VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#FF2D2D2D"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+            </StackPanel>
+        </Border>
+
+        <!-- Контактная информация -->
+        <Border Width="540" 
+        Height="338" 
+        Background="#FF171A1F"
+        BorderBrush="#FF5E5E5E"
+        BorderThickness="1"
+        CornerRadius="4"
+        Padding="20" Margin="986,255,50,373">
+
+            <StackPanel Margin="0,0,22,0">
+                <!-- Заголовок -->
+                <TextBlock Text="Контактная Информация" 
+                 Foreground="#FFCACACA" 
+                 FontSize="18"
+                 FontFamily="Segoe UI"
+                 FontWeight="SemiBold"
+                 Margin="0,0,0,20"/>
+
+                <!-- Email -->
+                <TextBlock Text="Email" 
+                 Foreground="#FFCACACA" 
+                 FontSize="14"
+                 FontFamily="Segoe UI"
+                 Margin="0,0,0,8"/>
+
+                <Border Background="#FF2D2D2D"
+                BorderBrush="#FF5E5E5E"
+                BorderThickness="1"
+                CornerRadius="4"
+                Height="40"
+                Margin="0,0,0,20">
+                    <TextBlock Text="ivan.petrov@example.com" 
+                     Foreground="White" 
+                     FontSize="14"
+                     FontFamily="Segoe UI"
+                     FontWeight="Medium"
+                     VerticalAlignment="Center"
+                     Margin="10,0,0,0"/>
+                </Border>
+
+                <!-- Телефон -->
+                <TextBlock Text="Телефон" 
+                 Foreground="#FFCACACA" 
+                 FontSize="14"
+                 FontFamily="Segoe UI"
+                 Margin="0,0,0,8"/>
+
+                <Border Background="#FF2D2D2D"
+                BorderBrush="#FF5E5E5E"
+                BorderThickness="1"
+                CornerRadius="4"
+                Height="40"
+                Margin="0,0,0,0">
+                    <TextBlock Text="+7 (912) 345-67-89" 
+                     Foreground="White" 
+                     FontSize="14"
+                     FontFamily="Segoe UI"
+                     FontWeight="Medium"
+                     VerticalAlignment="Center"
+                     Margin="10,0,0,0"/>
+                </Border>
+
+            </StackPanel>
+        </Border>
+        <!-- Личная информация -->
+        <Border Width="528" 
+        Height="371" 
+        Background="#FF171A1F"
+        BorderBrush="#FF5E5E5E"
+        BorderThickness="1"
+        CornerRadius="4"
+        Padding="20" Margin="296,238,752,357">
+
+            <StackPanel Margin="0,0,18,0">
+                <!-- Заголовок -->
+                <TextBlock Text="Личная Информация" 
+                 Foreground="#FFCACACA" 
+                 FontSize="18"
+                 FontFamily="Segoe UI"
+                 FontWeight="SemiBold"
+                 Margin="0,0,0,20"/>
+
+                <!-- Фамилия -->
+                <TextBlock Text="Фамилия" 
+                 Foreground="#FFCACACA" 
+                 FontSize="14"
+                 FontFamily="Segoe UI"
+                 Margin="0,0,0,8"/>
+
+                <Border Background="#FF2D2D2D"
+                BorderBrush="#FF5E5E5E"
+                BorderThickness="1"
+                CornerRadius="4"
+                Height="40"
+                Margin="0,0,0,15">
+                    <TextBlock Text="Петров" 
+                     Foreground="White" 
+                     FontSize="14"
+                     FontFamily="Segoe UI"
+                     FontWeight="Medium"
+                     VerticalAlignment="Center"
+                     Margin="10,0,0,0"/>
+                </Border>
+
+                <!-- Имя -->
+                <TextBlock Text="Имя" 
+                 Foreground="#FFCACACA" 
+                 FontSize="14"
+                 FontFamily="Segoe UI"
+                 Margin="0,0,0,8"/>
+
+                <Border Background="#FF2D2D2D"
+                BorderBrush="#FF5E5E5E"
+                BorderThickness="1"
+                CornerRadius="4"
+                Height="40"
+                Margin="0,0,0,15">
+                    <TextBlock Text="Иван" 
+                     Foreground="White" 
+                     FontSize="14"
+                     FontFamily="Segoe UI"
+                     FontWeight="Medium"
+                     VerticalAlignment="Center"
+                     Margin="10,0,0,0"/>
+                </Border>
+
+                <!-- Отчество -->
+                <TextBlock Text="Отчество" 
+                 Foreground="#FFCACACA" 
+                 FontSize="14"
+                 FontFamily="Segoe UI"
+                 Margin="0,0,0,8"/>
+
+                <Border Background="#FF2D2D2D"
+                BorderBrush="#FF5E5E5E"
+                BorderThickness="1"
+                CornerRadius="4"
+                Height="40"
+                Margin="0,0,0,15">
+                    <TextBlock Text="Сергеевич" 
+                     Foreground="White" 
+                     FontSize="14"
+                     FontFamily="Segoe UI"
+                     FontWeight="Medium"
+                     VerticalAlignment="Center"
+                     Margin="10,0,0,0"/>
+                </Border>
+
+            </StackPanel>
+        </Border>
+
+
+
+        <TextBlock HorizontalAlignment="Left" 
+            Height="60" 
+            Margin="224,0,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="373"
+            Foreground="White" 
+            FontSize="48"
+            FontFamily="Segoe UI"
+            TextAlignment="Center" 
+            Text="Мой Профиль"/>
+
+        <!-- Верхняя панель -->
+        <Border Background="Black" 
+                BorderBrush="#FF5E5E5E"
+                BorderThickness="0,0,0,1"
+                Height="61"
+                VerticalAlignment="Top"
+                Margin="224,3,0,0"/>
+
+        <!-- Основной контент -->
+        <Border Background="#FF171A1F" 
+            BorderBrush="#FF5E5E5E"
+            BorderThickness="0,1,1,0"
+            Width="224"
+            HorizontalAlignment="Left" Margin="-5,-17,0,0"/>
+        <Button BorderThickness="0" Click="Qutton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="48,94,0,0" RenderTransformOrigin="0.5,0.501">
+            <Button.Background>
+                <ImageBrush ImageSource="/NewFolder1/888.png"/>
+            </Button.Background>
+        </Button>
+        <Button BorderThickness="0" Click="Futton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="48,150,0,0" RenderTransformOrigin="0.5,0.501">
+            <Button.Background>
+                <ImageBrush ImageSource="/NewFolder1/999.png"/>
+            </Button.Background>
+        </Button>
+        <Button BorderThickness="0" Click="Dutton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="48,201,0,0" RenderTransformOrigin="0.5,0.501">
+            <Button.Background>
+                <ImageBrush ImageSource="/NewFolder1/1000.png"/>
+            </Button.Background>
+        </Button>
+        <Button BorderThickness="0" Click="Lutton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="48,255,0,0" RenderTransformOrigin="0.5,0.501">
+            <Button.Background>
+                <ImageBrush ImageSource="/NewFolder1/11.png"/>
+            </Button.Background>
+        </Button>
+        <Button BorderThickness="0" Click="Putton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="33,311,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/NewFolder1/111.png"/>
+            </Button.Background>
+        </Button>
+        <Button BorderThickness="0" Click="Wutton_Click" Width="130" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="51,879,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/NewFolder1/12!.png"/>
+            </Button.Background>
+        </Button>
+        <Button BorderThickness="0" Click="Vutton_Click" Width="130" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="51,914,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/NewFolder1/13.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="каталог" HorizontalAlignment="Left" Height="34" Margin="101,92,0,0" VerticalAlignment="Top" Width="72" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" FontSize="20"/>
+        <Button Content="настройки" HorizontalAlignment="Left" Height="34" Margin="101,197,0,0" VerticalAlignment="Top" Width="100" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" FontSize="20" Click="Button_Click" />
+        <Button Content="корзина" HorizontalAlignment="Left" Height="34" Margin="107,253,0,0" VerticalAlignment="Top" Width="81" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" FontSize="20" Click="Button_Click" />
+        <Button Content="заказы" HorizontalAlignment="Left" Margin="101,149,0,0" VerticalAlignment="Top" Width="64" Click="Button_Click" FontSize="20" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" Height="31"/>
+        <Button Content="ChinaTradeDB" HorizontalAlignment="Left" Margin="-5,-6,0,0" VerticalAlignment="Top" Width="226" Click="Button_Click" Background="#FF171A1F" BorderBrush="#FF171A1F" Foreground="#FFAB8168" FontSize="35"/>
+        <Button BorderThickness="0" Click="Autton_Click" Height="30" VerticalAlignment="Top" Margin="0,19,66,0" RenderTransformOrigin="2.683,0.435" HorizontalAlignment="Right" Width="30">
+            <Button.Background>
+                <ImageBrush ImageSource="/NewFolder1/666.png"/>
+            </Button.Background>
+        </Button>
+        <Button BorderThickness="0" Click="Zutton_Click" Height="30" VerticalAlignment="Top" Margin="0,19,22,0" RenderTransformOrigin="2.683,0.435" HorizontalAlignment="Right" Width="30">
+            <Button.Background>
+                <ImageBrush ImageSource="/NewFolder1/777.png"/>
+            </Button.Background>
+        </Button>
+        <Image Height="183" Margin="0,515,1576,0" VerticalAlignment="Top"/>
+        <Image Margin="261,52,15,741" Source="/NewFolder1/1688.png" Stretch="Fill" Width="1300" Height="173" OpacityMask="Black" Opacity="0.6"/>
+        <Button
+    Width="34" VerticalAlignment="Top" Margin="1442,707,0,0" Height="30" HorizontalAlignment="Left" Click="Uutton_Click" BorderThickness="0">
+            <Button.Background
+    >
+                <ImageBrush
+    ImageSource="/NewFolder1/8.png"/>
+            </Button.Background>
+        </Button>
+        <Button
+            Width="34" VerticalAlignment="Top" Margin="1442,782,0,0" Height="30" HorizontalAlignment="Left" Click="Uutton_Click" BorderThickness="0" RenderTransformOrigin="0.515,0.751">
+            <Button.Background
+    >
+                <ImageBrush
+                    ImageSource="/NewFolder1/8.png"/>
+            </Button.Background>
+        </Button>
+        <Image Margin="280,139,0,0" Source="/NewFolder1/i.png" Stretch="Fill" Height="83" VerticalAlignment="Top" HorizontalAlignment="Left" Width="85"/>
+        <Button BorderThickness="0" Click="Uutton_Click" Width="33" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="-263,609,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/NewFolder1/8.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
+

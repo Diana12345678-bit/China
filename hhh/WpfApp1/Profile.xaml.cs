@@ -15,16 +15,40 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Логика взаимодействия для Catalog.xaml
+    /// Логика взаимодействия для Profile.xaml
     /// </summary>
-    public partial class Catalog : Window
+    public partial class Profile : Window
     {
-        public Catalog()
+        public Profile()
         {
             InitializeComponent();
         }
-
+        
         private void Qutton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Futton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Dutton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Lutton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Putton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Wutton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Vutton_Click(object sender, RoutedEventArgs e)
         {
 
         }
@@ -33,63 +57,16 @@ namespace WpfApp1
         {
 
         }
-
-        private void Futton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Dutton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Lutton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Putton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Wutton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Vutton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Autton_Click(object sender, RoutedEventArgs e)
         {
 
         }
-
         private void Zutton_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void txtFirstName_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void Kutton_Click(object sender, RoutedEventArgs e)
+        private void Uutton_Click(object sender, RoutedEventArgs e)
         {
 
         }

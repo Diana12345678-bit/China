@@ -14,7 +14,7 @@
 
                 <!-- Центральный контейнер -->
                 <Border Width="800" 
-                        Height="600"
+                        Height="740"
                         Background="#FF171A1F"
                         BorderBrush="#FF5E5E5E"
                         BorderThickness="1"
@@ -69,27 +69,21 @@
                                 Text="Ваш пароль"
                                 FontFamily="Segoe UI"
                                 Margin="0,0,0,40"/>
+                        <Button x:Name="btnLogin_Копировать" 
+                            Height="70"
+                            Background="#FFAB816A"
+                            Foreground="White"
+                            FontSize="28"
+                            FontFamily="Segoe UI"
+                            Content="Войти"
+                            BorderThickness="0"
+                            Cursor="Hand"
+                            FontWeight="SemiBold" Click="btnLogin_Копировать_Click"
+                                />
 
                         <!-- Кнопка "Войти" -->
-                        <Button x:Name="btnLogin" 
-                                Height="70"
-                                Background="#FFAB816A"
-                                Foreground="White"
-                                FontSize="28"
-                                FontFamily="Segoe UI"
-                                Content="Войти"
-                                BorderThickness="0"
-                                Cursor="Hand"
-                                FontWeight="SemiBold"
-                                Margin="0,0,0,20"/>
 
                         <!-- Текст "или" -->
-                        <TextBlock Text="или" 
-                                  Foreground="#FFCACACA" 
-                                  FontSize="24"
-                                  FontFamily="Segoe UI"
-                                  TextAlignment="Center"
-                                  Margin="0,0,0,20"/>
 
                         <!-- Кнопка "Зарегистрироваться" -->
                         <Button x:Name="btnRegister" 
@@ -102,7 +96,7 @@
                                 BorderThickness="1"
                                 BorderBrush="#FFAB816A"
                                 Cursor="Hand"
-                                FontWeight="SemiBold"/>
+                                FontWeight="SemiBold" Click="btnRegister_Click"/>
 
                     </StackPanel>
                 </Border>

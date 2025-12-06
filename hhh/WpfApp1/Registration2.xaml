@@ -158,7 +158,7 @@
                         FontFamily="Segoe UI"
                         Content="Зарегистрироваться"
                         BorderThickness="0"
-                        Cursor="Hand"/>
+                        Cursor="Hand" Click="btnRegister_Click"/>
 
             </Grid>
 

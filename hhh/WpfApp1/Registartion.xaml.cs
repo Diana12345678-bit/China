@@ -28,5 +28,19 @@ namespace WpfApp1
         {
 
         }
+
+        private void btnRegister_Click(object sender, RoutedEventArgs e)
+        {
+            Registration2 registrartion2 = new Registration2();
+            registrartion2.Show();
+            Close();
+        }
+
+        private void btnLogin_Копировать_Click(object sender, RoutedEventArgs e)
+        {
+            Profile profile = new Profile();
+            profile.Show();
+            Close();
+        }
     }
 }

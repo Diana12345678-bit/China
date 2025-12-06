@@ -266,7 +266,7 @@
             BorderBrush="#FF171A1F"
             BorderThickness="1"
             Padding="10,0,0,0"
-            FontFamily="Segoe UI" Grid.ColumnSpan="2" TextChanged="txtFirstName_TextChanged" Text="      поиск по номеру заказа"/>
+            FontFamily="Segoe UI" Grid.ColumnSpan="2" TextChanged="txtFirstName_TextChanged" Text="      поиск по номеру заказа..."/>
         <Image Margin="0,87,412,864" Source="/NewFolder1/14.png" Stretch="Fill" RenderTransformOrigin="1.885,0.74" HorizontalAlignment="Right" Width="32">
             <Image.RenderTransform>
                 <TransformGroup>

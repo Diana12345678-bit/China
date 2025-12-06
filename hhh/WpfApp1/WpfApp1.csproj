@@ -68,8 +68,17 @@
     <Compile Include="BasketGood.xaml.cs">
       <DependentUpon>BasketGood.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Catalog.xaml.cs">
+      <DependentUpon>Catalog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainL.xaml.cs">
+      <DependentUpon>MainL.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Order.xaml.cs">
       <DependentUpon>Order.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.xaml.cs">
+      <DependentUpon>Profile.xaml</DependentUpon>
     </Compile>
     <Compile Include="Registartion.xaml.cs">
       <DependentUpon>Registartion.xaml</DependentUpon>
@@ -120,7 +129,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Catalog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainL.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Order.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Profile.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -164,6 +185,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="NewFolder1\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NewFolder1\1688.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NewFolder1\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NewFolder1\1608890.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NewFolder1\i.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

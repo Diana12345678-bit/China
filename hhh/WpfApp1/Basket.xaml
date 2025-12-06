@@ -405,7 +405,7 @@
                                 Height="40"
                                 Cursor="Hand"
                                 Margin="0,0,0,10"
-                                FontWeight="SemiBold"/>
+                                FontWeight="SemiBold" Click="Button_Click_1"/>
 
                         <Button Content="Продолжить покупки" 
                                 Background="Transparent"
@@ -416,7 +416,7 @@
                                 FontSize="14"
                                 Height="40"
                                 Cursor="Hand"
-                                FontWeight="SemiBold"/>
+                                FontWeight="SemiBold" Click="Button_Click_2"/>
                     </StackPanel>
                 </StackPanel>
 
