@@ -12,29 +12,25 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace WpfApp1
 {
     /// <summary>
-    /// Логика взаимодействия для Registration2.xaml
+    /// Логика взаимодействия для Help.xaml
     /// </summary>
-    public partial class Registration2 : Window
+    public partial class Help : Window
     {
-        public Registration2()
+        public Help()
         {
             InitializeComponent();
         }
 
-        private void btnRegister_Click(object sender, RoutedEventArgs e)
+       
+
+        private void Button_ClickPro(object sender, RoutedEventArgs e)
         {
             Profile profile = new Profile();
             profile.Show();
-            Close();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            MainL mainL = new MainL();
-            mainL.Show();
             Close();
         }
     }

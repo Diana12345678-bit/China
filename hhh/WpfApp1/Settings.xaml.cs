@@ -15,26 +15,19 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Логика взаимодействия для Registration2.xaml
+    /// Логика взаимодействия для Settings.xaml
     /// </summary>
-    public partial class Registration2 : Window
+    public partial class Settings : Window
     {
-        public Registration2()
+        public Settings()
         {
             InitializeComponent();
         }
 
-        private void btnRegister_Click(object sender, RoutedEventArgs e)
+        private void CatalogButton_Click(object sender, RoutedEventArgs e)
         {
-            Profile profile = new Profile();
-            profile.Show();
-            Close();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            MainL mainL = new MainL();
-            mainL.Show();
+            Catalog registrartion = new Catalog();
+            registrartion.Show();
             Close();
         }
     }

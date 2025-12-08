@@ -16,16 +16,7 @@
                 BorderBrush="#FF5E5E5E"
                 BorderThickness="0,1,1,0"
                 Width="224"
-                HorizontalAlignment="Left">
-            <Button Content="ChinaTradeDB&#xA;" 
-                    Background="#FF171A1F" 
-                    Foreground="#FFAB816A" 
-                    BorderBrush="#FF171A1F" 
-                    FontSize="30"
-                    VerticalAlignment="Top" 
-                    Margin="0,9,0,0" 
-                    Click="Button_Click_1"/>
-        </Border>
+                HorizontalAlignment="Left"/>
 
         <!-- Кнопки меню -->
         <Button BorderThickness="0" Click="Qutton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="22,98,0,0">
@@ -46,11 +37,6 @@
         <Button BorderThickness="0" Click="Lutton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="22,259,0,0">
             <Button.Background>
                 <ImageBrush ImageSource="/NewFolder1/11.png"/>
-            </Button.Background>
-        </Button>
-        <Button BorderThickness="0" Click="Putton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="7,315,0,0">
-            <Button.Background>
-                <ImageBrush ImageSource="/NewFolder1/111.png"/>
             </Button.Background>
         </Button>
         <Button BorderThickness="0" Click="Wutton_Click" Width="130" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="25,883,0,0">
@@ -662,10 +648,16 @@
                 </Grid>
             </ScrollViewer>
         </Grid>
-        <Button BorderThickness="0" Click="Kutton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,-50,0,0">
+        <Button BorderThickness="0" Click="Kutton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,49,0">
             <Button.Background>
                 <ImageBrush ImageSource="/NewFolder1/666.png"/>
             </Button.Background>
         </Button>
+        <Button BorderThickness="0" Click="Button_ClickPro" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="1392,0,0,0"  >
+            <Button.Background>
+                <ImageBrush ImageSource="/NewFolder1/777.png"/>
+            </Button.Background>
+        </Button>
+        <TextBlock TextWrapping="Wrap" Margin="10,19,0,915" FontSize="30" Background="#FF171A1F" Foreground="#FFAB816A" Text="ChinaTradeDB" HorizontalAlignment="Left" Width="209"/>
     </Grid>
 </Window>

@@ -16,19 +16,8 @@
                 BorderBrush="#FF5E5E5E"
                 BorderThickness="0,1,1,0"
                 Width="224"
-                HorizontalAlignment="Left" Margin="-22,0,0,0">
-            <Button Content="ChinaTradeDB&#xA;" 
-                Background="#FF171A1F" 
-                Foreground="#FFAB816A" 
-                BorderBrush="#FF171A1F" 
-                RenderTransformOrigin="0.221,0.594" 
-                FontSize="30"
-                VerticalAlignment="Top" Margin="0,9,0,0" Click="Button_Click_1"/>
-
-
-
-        </Border>
-        <Button BorderThickness="0" Click="Qutton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="22,98,0,0" RenderTransformOrigin="0.5,0.501">
+                HorizontalAlignment="Left" Margin="-22,0,0,0"/>
+        <Button BorderThickness="0" Click="Qutton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="22,98,0,0" RenderTransformOrigin="0.5,0.5">
             <Button.Background>
                 <ImageBrush ImageSource="/NewFolder1/888.png"/>
             </Button.Background>
@@ -43,14 +32,9 @@
                 <ImageBrush ImageSource="/NewFolder1/1000.png"/>
             </Button.Background>
         </Button>
-        <Button BorderThickness="0" Click="Lutton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="22,259,0,0" RenderTransformOrigin="0.5,0.501">
+        <Button BorderThickness="0" Click="Lutton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="22,259,0,0" RenderTransformOrigin="0.5,0.5">
             <Button.Background>
                 <ImageBrush ImageSource="/NewFolder1/11.png"/>
-            </Button.Background>
-        </Button>
-        <Button BorderThickness="0" Click="Putton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="7,315,0,0">
-            <Button.Background>
-                <ImageBrush ImageSource="/NewFolder1/111.png"/>
             </Button.Background>
         </Button>
         <Button BorderThickness="0" Click="Wutton_Click" Width="130" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="25,883,0,0">
@@ -249,10 +233,6 @@
             FontSize="48"
             FontFamily="Segoe UI"
             TextAlignment="Center" Text="Мои Заказы"/>
-        <Button Content="каталог" HorizontalAlignment="Left" Height="34" Margin="66,96,0,0" VerticalAlignment="Top" Width="72" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" FontSize="20"/>
-        <Button Content="настройки" HorizontalAlignment="Left" Height="34" Margin="66,201,0,0" VerticalAlignment="Top" Width="100" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" FontSize="20" Click="Button_Click" />
-        <Button Content="корзина" HorizontalAlignment="Left" Height="34" Margin="66,257,0,0" VerticalAlignment="Top" Width="81" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" FontSize="20" Click="Button_Click" />
-        <Button Content="заказы" HorizontalAlignment="Left" Margin="66,153,0,0" VerticalAlignment="Top" Width="64" Click="Button_Click" FontSize="20" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F"/>
         <TextBox x:Name="txtFirstName" 
             HorizontalAlignment="Left" 
             Height="50"
@@ -267,15 +247,10 @@
             BorderThickness="1"
             Padding="10,0,0,0"
             FontFamily="Segoe UI" Grid.ColumnSpan="2" TextChanged="txtFirstName_TextChanged" Text="      поиск по номеру заказа..."/>
-        <Image Margin="0,87,412,864" Source="/NewFolder1/14.png" Stretch="Fill" RenderTransformOrigin="1.885,0.74" HorizontalAlignment="Right" Width="32">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform X="-324.09"/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
+        <TextBlock TextWrapping="Wrap" Margin="1,12,1192,922" FontSize="30" Background="#FF171A1F" Foreground="#FFAB816A" Text="ChinaTradeDB"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="66,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" FontSize="20" Foreground="#FFCACACA"><Run Language="ru-ru" Text="каталог"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="66,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" FontSize="20" Foreground="#FFCACACA"><Run Language="ru-ru" Text="заказы"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="66,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" FontSize="20" Foreground="#FFCACACA"><Run Language="ru-ru" Text="настройки"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="66,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" FontSize="20" Foreground="#FFCACACA"><Run Language="ru-ru" Text="корзина"/></TextBlock>
     </Grid>
 </Window>

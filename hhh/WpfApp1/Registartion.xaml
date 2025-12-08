@@ -103,6 +103,14 @@
 
             </Grid>
         </Viewbox>
+        <Button Content="ChinaTradeDB&#xA;" 
+            Background="Black" 
+            Foreground="#FFAB816A" 
+            BorderBrush="#FF171A1F" 
+            FontSize="30"
+            VerticalAlignment="Top" 
+            Margin="0,10,1289,0" 
+            Click="Button_Click_1"/>
 
     </Grid>
 </Window>

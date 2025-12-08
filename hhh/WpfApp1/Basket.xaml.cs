@@ -35,7 +35,9 @@ namespace WpfApp1
         }
         private void Kutton_Click(object sender, RoutedEventArgs e)
         {
-
+            Notification notification = new Notification();
+            notification.Show();
+            Close();
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {

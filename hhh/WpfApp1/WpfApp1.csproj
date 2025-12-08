@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -71,8 +71,14 @@
     <Compile Include="Catalog.xaml.cs">
       <DependentUpon>Catalog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Help.xaml.cs">
+      <DependentUpon>Help.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainL.xaml.cs">
       <DependentUpon>MainL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Notification.xaml.cs">
+      <DependentUpon>Notification.xaml</DependentUpon>
     </Compile>
     <Compile Include="Order.xaml.cs">
       <DependentUpon>Order.xaml</DependentUpon>
@@ -85,6 +91,9 @@
     </Compile>
     <Compile Include="Registration2.xaml.cs">
       <DependentUpon>Registration2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -133,7 +142,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Help.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainL.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Notification.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -150,6 +167,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Registration2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Settings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

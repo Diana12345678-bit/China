@@ -47,7 +47,9 @@ namespace WpfApp1
 
         private void Dutton_Click(object sender, RoutedEventArgs e)
         {
-
+            Settings settings = new Settings();
+            settings.Show();
+            Close();
         }
 
         private void Lutton_Click(object sender, RoutedEventArgs e)
@@ -64,7 +66,9 @@ namespace WpfApp1
 
         private void Wutton_Click(object sender, RoutedEventArgs e)
         {
-
+            Help help = new Help();
+            help.Show();
+            Close();
         }
 
         private void Vutton_Click(object sender, RoutedEventArgs e)
@@ -84,7 +88,9 @@ namespace WpfApp1
 
         private void Kutton_Click(object sender, RoutedEventArgs e)
         {
-
+            Notification notification = new Notification(); 
+            notification.Show();
+            Close();
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
@@ -99,6 +105,11 @@ namespace WpfApp1
             Profile profile = new Profile();
             profile.Show();
             Close();
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

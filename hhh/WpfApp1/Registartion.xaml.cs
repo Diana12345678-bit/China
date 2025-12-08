@@ -42,5 +42,12 @@ namespace WpfApp1
             profile.Show();
             Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainL mainL = new MainL();
+            mainL.Show();
+            Close();
+        }
     }
 }

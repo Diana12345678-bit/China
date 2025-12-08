@@ -16,16 +16,7 @@
                 BorderBrush="#FF5E5E5E"
                 BorderThickness="0,1,1,0"
                 Width="224"
-                HorizontalAlignment="Left">
-            <Button Content="ChinaTradeDB&#xA;" 
-                    Background="#FF171A1F" 
-                    Foreground="#FFAB816A" 
-                    BorderBrush="#FF171A1F" 
-                    FontSize="30"
-                    VerticalAlignment="Top" 
-                    Margin="0,9,0,0" 
-                    Click="Button_Click_1"/>
-        </Border>
+                HorizontalAlignment="Left"/>
 
         <!-- Кнопки меню -->
         <Button BorderThickness="0" Click="Qutton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="22,98,0,0">
@@ -55,10 +46,6 @@
         </Button>
 
         <!-- Текстовые кнопки меню -->
-        <Button Content="каталог" HorizontalAlignment="Left" Height="34" Margin="66,96,0,0" VerticalAlignment="Top" Width="72" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" FontSize="20" Click="Button_Click"/>
-        <Button Content="настройки" HorizontalAlignment="Left" Height="34" Margin="66,201,0,0" VerticalAlignment="Top" Width="100" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" FontSize="20" Click="Button_Click" />
-        <Button Content="корзина" HorizontalAlignment="Left" Height="34" Margin="66,257,0,0" VerticalAlignment="Top" Width="81" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" FontSize="20" Click="Button_Click" />
-        <Button Content="заказы" HorizontalAlignment="Left" Margin="66,153,0,0" VerticalAlignment="Top" Width="64" Click="Button_Click" FontSize="20" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F"/>
 
         <!-- Верхние правые кнопки -->
 
@@ -634,11 +621,6 @@
                     </Border>
                 </Grid>
             </ScrollViewer>
-            <Button BorderThickness="0" Click="Button_ClickPro" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="1168,2,0,0"  >
-                <Button.Background>
-                    <ImageBrush ImageSource="/NewFolder1/777.png"/>
-                </Button.Background>
-            </Button>
         </Grid>
         <Button BorderThickness="0" Click="Kutton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,49,0">
             <Button.Background>
@@ -646,5 +628,10 @@
             </Button.Background>
         </Button>
         <Button Content="ВХОД" HorizontalAlignment="Left" Height="50" Margin="10,363,0,0" VerticalAlignment="Top" Width="137" Click="Button_Click_3" Foreground="#FFAB816A" Background="Black" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="66,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" FontSize="20" Foreground="#FFCACACA"><Run Language="ru-ru" Text="настройки"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="66,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" FontSize="20" Foreground="#FFCACACA"><Run Language="ru-ru" Text="корзина"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="66,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" FontSize="20" Foreground="#FFCACACA"><Run Language="ru-ru" Text="заказы"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="66,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" FontSize="20" Foreground="#FFCACACA"><Run Language="ru-ru" Text="каталог"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="10,19,0,915" FontSize="30" Background="#FF171A1F" Foreground="#FFAB816A" Text="ChinaTradeDB" HorizontalAlignment="Left" Width="209"/>
     </Grid>
 </Window>

@@ -1,0 +1,73 @@
+﻿<Window x:Class="WpfApp1.Notification"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Уведомления - China Trade Manager" 
+        Height="982" 
+        Width="1512"
+        MinHeight="982" 
+        MinWidth="1512"
+        WindowStartupLocation="CenterScreen"
+        Background="#FF1E1E1E">
+
+    <Grid>
+        <!-- Меню слева -->
+
+        <!-- Иконки меню -->
+
+        <!-- Текстовые кнопки меню -->
+
+        <!-- Основной контент -->
+        <Grid Margin="224,0,0,0">
+            <!-- Верхняя панель -->
+            <Border Background="Black" 
+                    BorderBrush="#FF5E5E5E"
+                    BorderThickness="0,0,0,1"
+                    Height="60"
+                    VerticalAlignment="Top"/>
+
+            <!-- Заголовок -->
+
+            <!-- Основное содержимое -->
+            <Border Background="#FF171A1F"
+                    BorderBrush="#FF5E5E5E"
+                    BorderThickness="1"
+                    CornerRadius="4"
+                    Width="1064"
+                    Height="652"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+
+                <StackPanel HorizontalAlignment="Center" 
+                            VerticalAlignment="Center">
+                    <!-- Иконка (можно заменить на свою) -->
+                    <TextBlock Text="🔔"
+                               FontSize="72"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,30"/>
+
+                    <!-- Основной текст -->
+                    <TextBlock Text="Уведомлений пока нет"
+                               Foreground="#FFCACACA"
+                               FontSize="24"
+                               FontFamily="Segoe UI"
+                               FontWeight="SemiBold"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,15"/>
+
+                    <!-- Пояснительный текст -->
+                    <TextBlock Text="Здесь будут отображаться уведомления о статусе заказов, акциях и важных событиях"
+                               Foreground="#FFCACACA"
+                               FontSize="16"
+                               FontFamily="Segoe UI"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               Width="500"
+                               HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+
+          
+            
+        </Grid>
+    </Grid>
+</Window>

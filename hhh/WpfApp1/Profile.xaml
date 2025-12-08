@@ -302,11 +302,6 @@
                 <ImageBrush ImageSource="/NewFolder1/11.png"/>
             </Button.Background>
         </Button>
-        <Button BorderThickness="0" Click="Putton_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="33,311,0,0">
-            <Button.Background>
-                <ImageBrush ImageSource="/NewFolder1/111.png"/>
-            </Button.Background>
-        </Button>
         <Button BorderThickness="0" Click="Wutton_Click" Width="130" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="51,879,0,0">
             <Button.Background>
                 <ImageBrush ImageSource="/NewFolder1/12!.png"/>
@@ -317,19 +312,9 @@
                 <ImageBrush ImageSource="/NewFolder1/13.png"/>
             </Button.Background>
         </Button>
-        <Button Content="каталог" HorizontalAlignment="Left" Height="34" Margin="101,92,0,0" VerticalAlignment="Top" Width="72" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" FontSize="20"/>
-        <Button Content="настройки" HorizontalAlignment="Left" Height="34" Margin="101,197,0,0" VerticalAlignment="Top" Width="100" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" FontSize="20" Click="Button_Click" />
-        <Button Content="корзина" HorizontalAlignment="Left" Height="34" Margin="107,253,0,0" VerticalAlignment="Top" Width="81" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" FontSize="20" Click="Button_Click" />
-        <Button Content="заказы" HorizontalAlignment="Left" Margin="101,149,0,0" VerticalAlignment="Top" Width="64" Click="Button_Click" FontSize="20" Background="#FF171A1F" Foreground="#FFCACACA" BorderBrush="#FF171A1F" Height="31"/>
-        <Button Content="ChinaTradeDB" HorizontalAlignment="Left" Margin="-5,-6,0,0" VerticalAlignment="Top" Width="226" Click="Button_Click" Background="#FF171A1F" BorderBrush="#FF171A1F" Foreground="#FFAB8168" FontSize="35"/>
         <Button BorderThickness="0" Click="Autton_Click" Height="30" VerticalAlignment="Top" Margin="0,19,66,0" RenderTransformOrigin="2.683,0.435" HorizontalAlignment="Right" Width="30">
             <Button.Background>
                 <ImageBrush ImageSource="/NewFolder1/666.png"/>
-            </Button.Background>
-        </Button>
-        <Button BorderThickness="0" Click="Zutton_Click" Height="30" VerticalAlignment="Top" Margin="0,19,22,0" RenderTransformOrigin="2.683,0.435" HorizontalAlignment="Right" Width="30">
-            <Button.Background>
-                <ImageBrush ImageSource="/NewFolder1/777.png"/>
             </Button.Background>
         </Button>
         <Image Height="183" Margin="0,515,1576,0" VerticalAlignment="Top"/>
@@ -351,11 +336,11 @@
             </Button.Background>
         </Button>
         <Image Margin="280,139,0,0" Source="/NewFolder1/i.png" Stretch="Fill" Height="83" VerticalAlignment="Top" HorizontalAlignment="Left" Width="85"/>
-        <Button BorderThickness="0" Click="Uutton_Click" Width="33" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="-263,609,0,0">
-            <Button.Background>
-                <ImageBrush ImageSource="/NewFolder1/8.png"/>
-            </Button.Background>
-        </Button>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="83,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" FontSize="20" Foreground="#FFCACACA"><Run Language="ru-ru" Text="настройки"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="83,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" FontSize="20" Foreground="#FFCACACA"><Run Language="ru-ru" Text="корзина"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="83,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" FontSize="20" Foreground="#FFCACACA"><Run Language="ru-ru" Text="заказы"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="83,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" FontSize="20" Foreground="#FFCACACA"><Run Language="ru-ru" Text="каталог"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="19,12,1357,922" FontSize="30" Background="#FF171A1F" Foreground="#FFAB816A" Text="ChinaTradeDB"/>
     </Grid>
 </Window>
 

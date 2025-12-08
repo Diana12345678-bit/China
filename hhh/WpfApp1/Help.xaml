@@ -1,0 +1,108 @@
+﻿<Window x:Class="WpfApp1.Help"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Помощь - China Trade Manager" 
+        Height="982" 
+        Width="1512"
+        MinHeight="982" 
+        MinWidth="1512"
+        WindowStartupLocation="CenterScreen"
+        Background="#FF1E1E1E">
+
+    <Grid>
+        <!-- Меню слева -->
+
+        <!-- Иконки меню -->
+        <Button BorderThickness="0" Width="130" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="25,883,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/NewFolder1/12!.png"/>
+            </Button.Background>
+        </Button>
+        <Button BorderThickness="0" Width="130" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="25,918,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/NewFolder1/13.png"/>
+            </Button.Background>
+        </Button>
+
+        <!-- Текстовые кнопки меню -->
+
+        <!-- Основной контент -->
+        <Grid Margin="224,0,0,0">
+            <!-- Верхняя панель -->
+            <Border Background="Black" 
+                    BorderBrush="#FF5E5E5E"
+                    BorderThickness="0,0,0,1"
+                    Height="60"
+                    VerticalAlignment="Top"/>
+
+            <!-- Заголовок -->
+
+            <!-- Основное содержимое -->
+            <Border Background="#FF171A1F"
+                    BorderBrush="#FF5E5E5E"
+                    BorderThickness="1"
+                    CornerRadius="4"
+                    Width="935"
+                    Height="487"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+
+                <StackPanel HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"
+                            Margin="40">
+                    <!-- Иконка -->
+                    <TextBlock Text="❓"
+                               FontSize="72"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,30"/>
+
+                    <!-- Основной текст -->
+                    <TextBlock Text="Чат поддержки в разработке"
+                               Foreground="#FFCACACA"
+                               FontSize="24"
+                               FontFamily="Segoe UI"
+                               FontWeight="SemiBold"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,20"/>
+
+                    <!-- Пояснительный текст -->
+                    <TextBlock Text="К сожалению, у нас еще не создан чат поддержки, но мы в процессе!"
+                               Foreground="#FFCACACA"
+                               FontSize="18"
+                               FontFamily="Segoe UI"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               Width="500"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,30"/>
+
+                    <!-- Дополнительная информация -->
+                    <StackPanel>
+                        <TextBlock Text="Пока что вы можете:"
+                                   Foreground="#FFAB816A"
+                                   FontSize="16"
+                                   FontFamily="Segoe UI"
+                                   FontWeight="Medium"
+                                   Margin="0,0,0,15"/>
+
+                        <StackPanel Margin="20,0,0,0">
+
+                            <TextBlock
+                                       Foreground="#FFCACACA"
+                                       FontSize="14"
+                                       FontFamily="Segoe UI"
+                                       Margin="0,0,0,8" Height="44" Width="512"><Run Text=" Написать на почту support@chinatrade.ru"/><Run Text=" или позвонить нам на 880055535"/><Run Language="ru-ru" Text="53"/></TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- Правые верхние кнопки -->
+        </Grid>
+        <Button BorderThickness="0" Click="Button_ClickPro" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="1456,12,0,0"  >
+            <Button.Background>
+                <ImageBrush ImageSource="/NewFolder1/777.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
