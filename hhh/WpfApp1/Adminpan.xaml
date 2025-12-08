@@ -1,0 +1,362 @@
+﻿<Window x:Class="WpfApp1.Adminpan"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Панель администратора - China Trade Manager" 
+        Height="982" 
+        Width="1512"
+        MinHeight="982" 
+        MinWidth="1512"
+        WindowStartupLocation="CenterScreen"
+        Background="#FF1E1E1E">
+
+    <Grid>
+        <!-- Верхняя панель -->
+        <Border Background="Black" 
+                BorderBrush="#FF5E5E5E"
+                BorderThickness="0,0,0,1"
+                Height="60"
+                VerticalAlignment="Top"/>
+
+        <!-- Заголовок -->
+        <TextBlock Text="Панель администратора" 
+                   HorizontalAlignment="Center" 
+                   Height="60" 
+                   Margin="0,0,0,0" 
+                   VerticalAlignment="Top" 
+                   Foreground="White" 
+                   FontSize="48"
+                   FontFamily="Segoe UI"
+                   TextAlignment="Center"/>
+
+        <!-- Кнопка назад -->
+
+        <!-- Контейнер таблицы -->
+        <Border Background="#FF171A1F"
+                BorderBrush="#FF5E5E5E"
+                BorderThickness="1"
+                CornerRadius="4"
+                Margin="40,100,40,40">
+
+            <!-- ScrollViewer для таблицы -->
+            <ScrollViewer VerticalScrollBarVisibility="Auto" 
+                          HorizontalScrollBarVisibility="Auto">
+
+                <!-- Простая таблица -->
+                <Grid Margin="20">
+                    <!-- Заголовки столбцов -->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="120"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="180"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Заголовки -->
+                    <Border Grid.Row="0" Grid.Column="0" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="ID" Foreground="#FFAB816A" FontSize="14" FontFamily="Segoe UI" FontWeight="Bold"/>
+                    </Border>
+
+                    <Border Grid.Row="0" Grid.Column="1" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="" Foreground="#FFAB816A" FontSize="14" FontFamily="Segoe UI" FontWeight="Bold"/>
+                    </Border>
+
+                    <Border Grid.Row="0" Grid.Column="2" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="email" Foreground="#FFAB816A" FontSize="14" FontFamily="Segoe UI" FontWeight="Bold"/>
+                    </Border>
+
+                    <Border Grid.Row="0" Grid.Column="3" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="phone" Foreground="#FFAB816A" FontSize="14" FontFamily="Segoe UI" FontWeight="Bold"/>
+                    </Border>
+
+                    <Border Grid.Row="0" Grid.Column="4" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="last_name" Foreground="#FFAB816A" FontSize="14" FontFamily="Segoe UI" FontWeight="Bold"/>
+                    </Border>
+
+                    <Border Grid.Row="0" Grid.Column="5" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="user_type" Foreground="#FFAB816A" FontSize="14" FontFamily="Segoe UI" FontWeight="Bold"/>
+                    </Border>
+
+                    <Border Grid.Row="0" Grid.Column="6" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="employee_role" Foreground="#FFAB816A" FontSize="14" FontFamily="Segoe UI" FontWeight="Bold"/>
+                    </Border>
+
+                    <Border Grid.Row="0" Grid.Column="7" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="created_at" Foreground="#FFAB816A" FontSize="14" FontFamily="Segoe UI" FontWeight="Bold"/>
+                    </Border>
+
+                    <!-- Строка 1 -->
+                    <Border Grid.Row="1" Grid.Column="0" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="1" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="1" Grid.Column="1" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="1" Grid.Column="2" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="ivan@mail.ru" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="1" Grid.Column="3" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="+79151234567" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="1" Grid.Column="4" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="Петров Иван" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="1" Grid.Column="5" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="client" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="1" Grid.Column="6" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="NULL" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="1" Grid.Column="7" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="2025-11-24 15:09:20" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <!-- Строка 2 -->
+                    <Border Grid.Row="2" Grid.Column="0" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="2" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="2" Grid.Column="1" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="2" Grid.Column="2" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="maria@gmail.com" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="2" Grid.Column="3" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="+79162345678" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="2" Grid.Column="4" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="Сидорова Мария" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="2" Grid.Column="5" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="client" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="2" Grid.Column="6" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="NULL" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="2" Grid.Column="7" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="2025-11-24 15:09:20" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <!-- Строка 3 -->
+                    <Border Grid.Row="3" Grid.Column="0" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="3" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="3" Grid.Column="1" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="3" Grid.Column="2" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="admin@company.ru" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="3" Grid.Column="3" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="+74951112233" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="3" Grid.Column="4" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="Иванов Андрей" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="3" Grid.Column="5" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="employee" Foreground="#FFAB816A" FontSize="14" FontFamily="Segoe UI" FontWeight="Medium"/>
+                    </Border>
+
+                    <Border Grid.Row="3" Grid.Column="6" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="admin" Foreground="#FFAB816A" FontSize="14" FontFamily="Segoe UI" FontWeight="Medium"/>
+                    </Border>
+
+                    <Border Grid.Row="3" Grid.Column="7" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="2025-11-24 15:09:20" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <!-- Строка 4 -->
+                    <Border Grid.Row="4" Grid.Column="0" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="4" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="4" Grid.Column="1" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="4" Grid.Column="2" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="manager@company.ru" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="4" Grid.Column="3" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="+74952223344" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="4" Grid.Column="4" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="Петрова Ольга" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="4" Grid.Column="5" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="employee" Foreground="#FFAB816A" FontSize="14" FontFamily="Segoe UI" FontWeight="Medium"/>
+                    </Border>
+
+                    <Border Grid.Row="4" Grid.Column="6" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="manager" Foreground="#FFAB816A" FontSize="14" FontFamily="Segoe UI" FontWeight="Medium"/>
+                    </Border>
+
+                    <Border Grid.Row="4" Grid.Column="7" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="2025-11-24 15:09:20" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <!-- Строка 5 -->
+                    <Border Grid.Row="5" Grid.Column="0" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="5" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="5" Grid.Column="1" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="5" Grid.Column="2" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="operator@company.ru" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="5" Grid.Column="3" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="+74953334455" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="5" Grid.Column="4" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="Сидоров Макс" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="5" Grid.Column="5" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="employee" Foreground="#FFAB816A" FontSize="14" FontFamily="Segoe UI" FontWeight="Medium"/>
+                    </Border>
+
+                    <Border Grid.Row="5" Grid.Column="6" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="operator" Foreground="#FFAB816A" FontSize="14" FontFamily="Segoe UI" FontWeight="Medium"/>
+                    </Border>
+
+                    <Border Grid.Row="5" Grid.Column="7" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="2025-11-24 15:09:20" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <!-- Строка 6 -->
+                    <Border Grid.Row="6" Grid.Column="0" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="6" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="6" Grid.Column="1" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="6" Grid.Column="2" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="admin@chinatrade.ru" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="6" Grid.Column="3" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="+7-495-111-22-33" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="6" Grid.Column="4" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="Иванов Андрей" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                    <Border Grid.Row="6" Grid.Column="5" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="employee" Foreground="#FFAB816A" FontSize="14" FontFamily="Segoe UI" FontWeight="Medium"/>
+                    </Border>
+
+                    <Border Grid.Row="6" Grid.Column="6" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="operator" Foreground="#FFAB816A" FontSize="14" FontFamily="Segoe UI" FontWeight="Medium"/>
+                    </Border>
+
+                    <Border Grid.Row="6" Grid.Column="7" Background="#FF25272B" BorderBrush="#FF5E5E5E" BorderThickness="1" Padding="10">
+                        <TextBlock Text="2025-11-17 15:14:38" Foreground="#FFCACACA" FontSize="14" FontFamily="Segoe UI"/>
+                    </Border>
+
+                </Grid>
+            </ScrollViewer>
+        </Border>
+
+        <!-- Статистика внизу -->
+        <Border Background="#FF171A1F"
+                BorderBrush="#FF5E5E5E"
+                BorderThickness="1"
+                CornerRadius="4"
+                Height="80"
+                VerticalAlignment="Bottom"
+                Margin="40,0,40,40">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Всего пользователей: " 
+                           Foreground="#FFCACACA" 
+                           FontSize="16"
+                           FontFamily="Segoe UI"
+                           Margin="0,0,10,0"/>
+                <TextBlock Text="6" 
+                           Foreground="#FFAB816A" 
+                           FontSize="16"
+                           FontFamily="Segoe UI"
+                           FontWeight="Bold"
+                           Margin="0,0,30,0"/>
+
+                <TextBlock Text="Клиенты: " 
+                           Foreground="#FFCACACA" 
+                           FontSize="16"
+                           FontFamily="Segoe UI"
+                           Margin="0,0,10,0"/>
+                <TextBlock Text="2" 
+                           Foreground="White" 
+                           FontSize="16"
+                           FontFamily="Segoe UI"
+                           FontWeight="Bold"
+                           Margin="0,0,30,0"/>
+
+                <TextBlock Text="Сотрудники: " 
+                           Foreground="#FFCACACA" 
+                           FontSize="16"
+                           FontFamily="Segoe UI"
+                           Margin="0,0,10,0"/>
+                <TextBlock Text="4" 
+                           Foreground="#FFAB816A" 
+                           FontSize="16"
+                           FontFamily="Segoe UI"
+                           FontWeight="Bold"
+                           Margin="0,0,30,0"/>
+
+                <TextBlock Text="Администраторы: " 
+                           Foreground="#FFCACACA" 
+                           FontSize="16"
+                           FontFamily="Segoe UI"
+                           Margin="0,0,10,0"/>
+                <TextBlock Text="1" 
+                           Foreground="#FFAB816A" 
+                           FontSize="16"
+                           FontFamily="Segoe UI"
+                           FontWeight="Bold"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

@@ -91,6 +91,7 @@
             <ScrollViewer VerticalScrollBarVisibility="Auto" 
                           Margin="0,140,0,0">
                 <!-- Grid для товаров с адаптивными столбцами -->
+                
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
