@@ -15,22 +15,13 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Логика взаимодействия для Notification.xaml
+    /// Логика взаимодействия для Comein.xaml
     /// </summary>
-    public partial class Notification : Window
+    public partial class Comein : Window
     {
-        public Notification()
+        public Comein()
         {
             InitializeComponent();
-        }
-
-     
-
-        private void Button_ClickPro(object sender, RoutedEventArgs e)
-        {
-            Profile profile = new Profile();
-            profile.Show();
-            Close();
         }
     }
 }
